@@ -1,4 +1,4 @@
-package com.fc.pass.passweb;
+package com.fc.pass;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
