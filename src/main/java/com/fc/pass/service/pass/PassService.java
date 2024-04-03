@@ -16,9 +16,6 @@ public class PassService {
 
     public List<Pass> getPasses(final String userId) {
         final List<PassEntity> passEntites = passRepository.findByUserId(userId);
-        for (PassEntity passEntite : passEntites) {
-            System.out.println("passEntite = " + passEntite);
-        }
         return PassModelMapper.INSTANCE.map(passEntites);
     }
 }
