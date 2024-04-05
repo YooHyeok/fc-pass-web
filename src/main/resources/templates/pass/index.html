@@ -47,7 +47,7 @@
         <div class="row gx-lg-5 mb-5">
             <div class="col-lg-6 col-xxl-4 mt-4" th:each="pass : ${passes}">
                 <div class="card border-0 h-100" th:classappend="${pass.getStatus.name() == 'EXPIRED' ? 'bg-gray-300 color-gray' : 'bg-gray-100'}">
-                    <div class="card-body p-4 p-lg-5 pt-4 pt-lg-0">
+                    <div class="card-body p-4 p-lg-4 pt-4 pt-lg-4">
                         <h2 class="fs-4 fw-bold" th:text="${pass.getPackageName()}"></h2>
                         <p class="mb-4 fs-7">
                             <span th:text="${#temporals.format(pass.getStartedAt(), 'yyyy-MM-dd HH:mm')}"/> ~
