@@ -17,6 +17,6 @@ public class UserGroupMappingService {
 
     public List<String> getAllUserGroupId() {
         List<UserGroupMappingEntity> userGroupMappingEntities = userGroupMappingRepository.findDistinctUserGroupIdByOrderByUserGroupId();
-        return userGroupMappingEntities.stream().map(UserGroupMappingEntity::getUserGroupId).toList();
+        return userGroupMappingEntities.stream().map(UserGroupMappingEntity::getUserGroupId).distinct().toList();
     }
 }

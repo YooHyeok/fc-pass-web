@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface UserGroupMappingRepository extends JpaRepository<UserGroupMappingEntity, Integer> {
-    List<UserGroupMappingEntity> findDistinctUserGroupIdByOrderByUserGroupId();
+    List<UserGroupMappingEntity> findDistinctUserGroupIdByOrderByUserGroupId(); // findDistinctByOrderByUserGroupId도 가능
 }
